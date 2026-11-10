@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en-SG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B2F3E">
+<title>TSN Dermatology | Medical, Surgical &amp; Cosmetic Skin Care Singapore</title>
+<meta name="description" content="Specialist dermatology at Gleneagles Medical Centre, Singapore. Meet Dr Koh Hong Yi and Dr Tham Siew Nee. Explore medical, surgical and cosmetic skin care and request a consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b2f3e;--blue:#379abe;--aqua:#08ded3;--teal:#087970;--pale:#eaf6fa;--mint:#e6f8f5;--ice:#94e2ff;--body:#4c4c4c;--muted:#61717a;--paper:#fff;--alt:#f3f8fa;--line:#d5e3e8;--strong:#8aa9b6;--action:#176783;--hover:#104d63;--space:96px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:115px}
+body{margin:0;background:var(--paper);color:var(--body);font:18px/1.65 Manrope,sans-serif}
+h1,h2,h3,p,figure{margin:0}
+h1,h2,h3{font-family:Lora,serif;font-weight:400;color:var(--navy);line-height:1.15}
+h1{font-size:clamp(44px,5.1vw,72px);letter-spacing:-.045em}
+h2{font-size:clamp(34px,3.5vw,48px);letter-spacing:-.035em}
+h3{font-size:29px;letter-spacing:-.025em}
+a{color:var(--action);text-underline-offset:5px}
+a:hover{color:var(--hover)}
+img{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--teal);outline-offset:5px}
+.dark a:focus-visible{outline-color:var(--aqua)}
+::selection{background:var(--mint);color:var(--navy)}
+.wrap{width:min(1200px,calc(100% - 96px));margin:auto}
+.section{padding:var(--space) 0}
+.eyebrow{font-size:15px;letter-spacing:.11em;text-transform:uppercase;font-weight:600;color:var(--teal);margin-bottom:20px}
+.small{font-size:15px;line-height:1.65}
+.muted{color:var(--muted)}
+.skip{position:fixed;top:-100px;left:15px;padding:12px;background:#fff;z-index:100}
+.skip:focus{top:12px}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:20px;background:var(--action);border:1px solid var(--action);border-radius:4px;color:#fff;min-height:55px;padding:14px 23px;font-size:17px;font-weight:600;text-decoration:none;transition:background .2s,transform .2s}
+.button:hover{background:var(--hover);border-color:var(--hover);color:#fff;transform:translateY(-2px)}
+.button.outline{background:transparent;border-color:var(--strong);color:var(--navy)}
+.button.outline:hover{background:var(--pale);border-color:var(--action)}
+.arrow{display:inline-block;position:relative;width:9px;height:9px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor;flex-shrink:0;margin:0 3px}
+.arrow:after{content:'';position:absolute;right:-1px;top:-1px;width:13px;border-top:1.5px solid currentColor;transform:rotate(-45deg);transform-origin:right center}
+.text-link{display:inline-flex;align-items:center;gap:14px;font-size:17px;font-weight:600}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.98);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:30px;min-height:104px}
+.brand{flex-shrink:0}
+.brand img{width:180px;height:auto}
+.nav{display:flex;align-items:center;gap:29px}
+.nav a{font-size:17px;text-decoration:none;color:var(--navy)}
+.nav a:hover{text-decoration:underline}
+.nav .button{font-size:16px;color:#fff;padding:12px 19px;min-height:50px}
+.menu{display:none;background:#fff;border:1px solid var(--strong);border-radius:4px;color:var(--navy);padding:9px 15px;font-size:17px}
+.hero{position:relative;background:linear-gradient(110deg,#fff 48%,var(--alt) 48%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:75px;align-items:center;padding:65px 0 64px}
+.hero h1 span{color:var(--action)}
+.hero-copy>p:not(.eyebrow){font-size:18px;margin-top:26px;max-width:525px}
+.hero-copy .small{font-size:15px!important;margin-top:18px!important}
+.care-index{background:var(--navy);color:#fff;border-radius:0 72px 0 0;padding:34px 32px 10px;box-shadow:-14px 14px 0 var(--mint);position:relative;overflow:hidden}
+.care-index:before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--aqua),#0483d4)}
+.index-label{font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--ice);margin-bottom:18px}
+.index-item{display:grid;grid-template-columns:30px 1fr 12px;gap:16px;align-items:start;padding:25px 0;border-top:1px solid #527582;color:white;text-decoration:none}
+.index-item:hover{color:var(--ice)}
+.index-item>span:first-child{font-size:15px;color:var(--ice);padding-top:5px}
+.index-item strong{font:400 29px/1.2 Lora,serif;display:block}
+.index-item p{font-size:16px;line-height:1.6;margin-top:12px;color:#d4e6ed}
+.index-item .arrow{margin-top:12px}
+.heritage{border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:35px;padding:27px 0;font-size:17px}
+.heritage strong{font-family:Lora,serif;font-size:28px;font-weight:400;color:var(--navy)}
+.heritage>p{max-width:665px;font-size:17px}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:55px;margin-bottom:42px}
+.section-head>p{max-width:365px;font-size:17px}
+.care-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:44px}
+.care-card{display:flex;flex-direction:column;align-items:start;border-top:1px solid var(--line);padding:29px 0 33px}
+.care-card svg{width:48px;height:48px;fill:none;stroke:var(--action);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:25px}
+.care-card h3{font-size:29px;margin-bottom:17px}
+.care-card p{font-size:17px;line-height:1.65;margin-bottom:22px}
+.care-card .text-link{margin-top:auto;font-size:16px}
+.care-more{border-top:1px solid var(--line);padding-top:24px;font-size:17px}
+.doctors{background:var(--alt)}
+.doctor-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px}
+.doctor-card{background:#fff;border-bottom:3px solid var(--blue)}
+.doctor-card img{width:100%;height:310px;object-fit:cover;object-position:center 25%}
+.doctor-copy{padding:29px 32px 33px}
+.doctor-copy .eyebrow{font-size:15px;letter-spacing:.07em;margin-bottom:12px}
+.doctor-copy h3{font-size:32px}
+.doctor-copy .qualifications{font-size:15px;line-height:1.7;margin-top:16px;color:var(--muted)}
+.doctor-copy>p:not(.eyebrow):not(.qualifications){font-size:17px;margin-top:20px}
+.doctor-copy .text-link{font-size:16px;margin-top:23px}
+.doctor-note{font-size:16px;color:var(--muted);margin-top:26px;max-width:850px}
+.approach{background:var(--navy);color:#fff}
+.approach h2,.approach h3{color:#fff}
+.approach .eyebrow{color:var(--ice)}
+.approach-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:85px}
+.approach-copy>p:not(.eyebrow){font-size:17px;margin-top:25px;color:#d4e6ed}
+.approach a{color:var(--ice)}
+.approach .text-link{margin-top:25px}
+.step{display:grid;grid-template-columns:36px 1fr;gap:22px;padding:24px 0;border-top:1px solid #527582}
+.step:last-child{border-bottom:1px solid #527582}
+.step>span{font-size:16px;color:var(--ice)}
+.step h3{font-size:26px}
+.step p{font-size:17px;color:#d4e6ed;margin-top:12px}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.address-panel{padding-top:28px;border-top:3px solid var(--blue)}
+.address-panel h3{font-size:30px}
+.address-panel address{font-size:20px;font-style:normal;line-height:1.7;margin:23px 0}
+.address-panel .text-link{font-size:17px}
+.hours-panel{background:var(--pale);padding:30px 34px}
+.hours-panel h3{font-size:28px;margin-bottom:21px}
+.hour-row{padding:16px 0;border-top:1px solid #b9d4df;display:grid;grid-template-columns:105px 1fr;gap:20px;font-size:17px}
+.hour-row strong{font-weight:600;color:var(--navy)}
+.hours-panel .small{margin-top:18px;color:var(--muted)}
+.contact-line{display:flex;flex-wrap:wrap;gap:18px 40px;padding-top:26px;margin-top:30px;border-top:1px solid var(--line);font-size:17px}
+.contact-line a{overflow-wrap:anywhere}
+.appointment{background:var(--mint)}
+.appointment-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:75px;align-items:center}
+.appointment-copy>p:not(.eyebrow){font-size:17px;margin-top:24px}
+.appointment-actions .button{width:100%;margin-bottom:12px}
+.appointment-actions .text-link{font-size:16px;margin-top:10px}
+.appointment-actions .small{margin-top:18px;color:var(--muted)}
+.faq-grid{display:grid;grid-template-columns:.85fr 1.35fr;gap:80px}
+.faq-copy>p:not(.eyebrow){font-size:17px;margin-top:24px}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{display:flex;align-items:center;justify-content:space-between;gap:22px;font-size:19px;line-height:1.5;font-weight:600;color:var(--navy);list-style:none;cursor:pointer;padding:24px 0}
+summary::-webkit-details-marker{display:none}
+summary:after{content:'+';font-size:24px;font-weight:400}
+details[open] summary:after{content:'−'}
+details p{font-size:17px;padding:0 20px 24px 0}
+.footer{background:var(--navy);color:#d4e6ed;padding:36px 0}
+.footer a{color:var(--ice)}
+.footer-top{display:flex;justify-content:space-between;align-items:start;gap:40px}
+.footer-title{font:400 30px/1.3 Lora,serif;color:#fff}
+.footer-top .small{margin-top:10px}
+.footer-top nav{display:flex;flex-wrap:wrap;gap:24px;font-size:16px}
+.footer-bottom{border-top:1px solid #527582;display:flex;justify-content:space-between;gap:25px;font-size:15px;padding-top:23px;margin-top:25px}
+.mobile-actions{display:none}
+.enter{animation:enter .65s both}
+@keyframes enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+@media(max-width:1050px){
+.wrap{width:calc(100% - 64px)}
+.nav{gap:24px}
+.hero-grid{gap:40px}
+.hero-copy .actions{flex-direction:column;max-width:330px}
+.care-index{padding:30px 25px 8px}
+.index-item{gap:12px;grid-template-columns:24px 1fr 10px}
+.index-item strong{font-size:27px}
+.care-grid{column-gap:30px}
+.doctor-grid{gap:28px}
+.doctor-copy{padding:25px}
+.doctor-copy h3{font-size:30px}
+.approach-grid,.visit-grid,.appointment-grid,.faq-grid{gap:45px}
+}
+@media(max-width:850px){
+:root{--space:76px}
+.header-inner{min-height:92px}
+.brand img{width:160px}
+.menu{display:block}
+.nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:20px 32px;box-shadow:0 12px 20px #0b2f3e0a}
+.nav.open{display:flex;flex-direction:column;align-items:stretch;gap:0}
+.nav a{font-size:17px;padding:13px 0}
+.nav .button{padding:13px 20px;margin-top:12px}
+.hero-grid{gap:30px;padding:45px 0 52px}
+.care-index{padding:28px 23px 8px;border-radius:0 50px 0 0;box-shadow:-9px 9px 0 var(--mint)}
+.index-item{grid-template-columns:1fr 10px;gap:12px;padding:22px 0}
+.index-item>span:first-child{display:none}
+.index-item strong{font-size:26px}
+.index-item p{font-size:16px}
+.heritage{align-items:start;gap:30px}
+.heritage strong{white-space:nowrap;font-size:26px}
+.care-card h3{font-size:26px}
+.doctor-card img{height:260px}
+.doctor-copy h3{font-size:28px}
+.approach-grid{gap:35px}
+.step{grid-template-columns:25px 1fr;gap:15px}
+.visit-grid{gap:35px}
+.hours-panel{padding:25px}
+.hour-row{grid-template-columns:1fr;gap:5px}
+.appointment-grid{gap:35px}
+.faq-grid{grid-template-columns:1fr;gap:35px}
+.faq-copy{max-width:550px}
+}
+@media(max-width:650px){
+:root{--space:60px}
+html{scroll-padding-top:100px}
+.wrap{width:calc(100% - 40px)}
+.header-inner{min-height:88px;gap:20px}
+.brand img{width:150px}
+.menu{font-size:17px;padding:9px 15px}
+.hero{background:var(--alt)}
+.hero-grid{grid-template-columns:1fr;gap:34px;padding:35px 0 40px}
+.eyebrow{font-size:15px;letter-spacing:.09em;margin-bottom:18px}
+.hero-copy>p:not(.eyebrow){font-size:17px;margin-top:24px}
+.hero-copy .actions{max-width:none;margin-top:25px}
+.hero-copy .small{font-size:15px!important}
+.care-index{padding:27px 25px 8px;margin-left:9px}
+.index-item{grid-template-columns:25px 1fr 10px;gap:14px}
+.index-item>span:first-child{display:block}
+.index-item strong{font-size:28px}
+.index-item p{font-size:16px}
+.heritage{display:block;padding:25px 0}
+.heritage strong{font-size:28px}
+.heritage>p{margin-top:13px;font-size:17px}
+.section-head{display:block;margin-bottom:30px}
+.section-head>p{max-width:none;margin-top:22px;font-size:17px}
+.care-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}
+.care-card{padding:25px 0}
+.care-card svg{width:43px;height:43px;margin-bottom:22px}
+.care-card h3{font-size:24px;line-height:1.25}
+.care-card p{font-size:16px;line-height:1.65;margin-bottom:20px}
+.care-card .text-link{font-size:16px;gap:9px;line-height:1.5}
+.doctor-grid{grid-template-columns:1fr;gap:30px}
+.doctor-card img{height:auto;aspect-ratio:650/450}
+.doctor-copy{padding:26px}
+.doctor-copy h3{font-size:30px}
+.doctor-copy>p:not(.eyebrow):not(.qualifications){font-size:17px}
+.doctor-note{font-size:16px}
+.approach-grid,.visit-grid,.appointment-grid{grid-template-columns:1fr;gap:32px}
+.step h3{font-size:25px}
+.step p{font-size:17px}
+.address-panel address{font-size:19px}
+.hours-panel{padding:25px}
+.hour-row{grid-template-columns:100px 1fr;gap:15px}
+.contact-line{display:block;font-size:17px}
+.contact-line>a{display:block;margin-top:12px}
+.appointment-actions .button{font-size:17px}
+.faq-grid{gap:30px}
+summary{font-size:18px}
+details p{padding-right:0}
+.footer{padding:30px 0 calc(115px + env(safe-area-inset-bottom))}
+.footer-top,.footer-bottom{flex-direction:column;align-items:start;gap:22px}
+.footer-top nav{gap:16px 24px}
+.footer-bottom{gap:10px}
+.mobile-actions{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1fr;gap:10px;background:#fff;border-top:1px solid var(--line);padding:12px 16px calc(12px + env(safe-area-inset-bottom));box-shadow:0 -3px 20px #0b2f3e0a}
+.mobile-actions .button{min-height:50px;font-size:17px;padding:10px 8px;gap:10px}
+}
+@media(max-width:360px){
+.wrap{width:calc(100% - 32px)}
+.care-grid{column-gap:18px}
+.care-index{padding:25px 21px 8px}
+.index-item{grid-template-columns:20px 1fr 10px;gap:10px}
+.index-item strong{font-size:26px}
+.doctor-copy{padding:23px}
+.hour-row{grid-template-columns:1fr;gap:5px}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*:before,*:after{animation:none!important;transition:none!important}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalClinic",
+  "name":"TSN Dermatology Skin Specialist Clinic",
+  "url":"https://skinhealthsg.com.sg/",
+  "medicalSpecialty":"Dermatology",
+  "telephone":"+6564766821",
+  "email":"skinhealthspore@gmail.com",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"6 Napier Road, #07-08 Gleneagles Medical Centre",
+    "addressLocality":"Singapore",
+    "postalCode":"258499",
+    "addressCountry":"SG"
+  },
+  "openingHoursSpecification":[
+    {
+      "@type":"OpeningHoursSpecification",
+      "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens":"08:30",
+      "closes":"13:00"
+    },
+    {
+      "@type":"OpeningHoursSpecification",
+      "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens":"14:00",
+      "closes":"17:00"
+    },
+    {
+      "@type":"OpeningHoursSpecification",
+      "dayOfWeek":"Saturday",
+      "opens":"08:30",
+      "closes":"13:00"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#main" aria-label="TSN Dermatology home">
+      <img src="data:image/webp;base64,UklGRsQgAABXRUJQVlA4WAoAAAAQAAAA4AAAYQAAQUxQSHEWAAAB8IZt22ul2bbtY85JB2mxglGwxS4pEDR2sN927N3YTbFiV9Qo9t7FbjSk2BV7F40Uewv2mihFJzBhtv3HOMeYA71u+BsRE4CPWWq6LDGPmff3/FgaRdP2t8jMK7v2XMyneZlXEcR9B62bG+kBwHvgEz4PL3L4JzK1GpRdFtmzmxUxfFO4zw2qo/LzmhYpil3hPmc42DLXGF6EKHaB+53hcKMP7+sVGQKucb8zNPw2w9ipiND5X252gqYh/3GNR+FP1+Qwmbt9QUd3x74etTaZfDOueKHMr3qjzlFRAwePWHTwDUlLBsncPyIkNcVH3yaZYSZpSVoxdkBUVFRUxwZVdIWjKov+oWrbn1194Vpv1k3yzsQggaFZfD7Nf/X0g77C8BtUnbG/jVTo8YmzMfvy9tjYCdHR0XHkycpQbPCbmfa7f6zeetpI3hlTAmLp+xwm/hA9fvDgMdO3PSav1yvkVH7I+z3dINZd5Cod1Ja/R7G5D1TXzTZXh2KVTXbriEJN8BuucoNyPx7VQe2XaXwR2zY0fEACzTE6NejKSzoFoPF//KEQ43mXU6HS6akpCGqb5dpmuUAY8Yq79WrwO/uqQPBTW6vCyxpugNouXAu1zXLNPaBc/j636tRUsV5Vg+rG136FlWDLC3dVZ+2V1bQ15bSA2hIpjNOrwG6GqsFozi2sTORQqP2SJ6AsTbBk1oN673M8XFpFGLeocvkvw6mQcjXfT9Xv7Kzg2fUaafyzv48KQ8sNaWTmnIoKUprpMzVYzqb/K5wqhkc0qR34P0OXdxFqq9qyOi/YFh8ffyQpj7RnfCBNu9u6yMrNekma37wl+frY+nXr1q2be4LLVHXkBE36rlO/PFblknXyqQ65tFqfZqEw6/ycbyQHnDutXSePne7sWNjM5euUl5RRV47r1UinqPZSlC9Q4cdrZOaeWeuv2Zi+6jsXoNw8M1VaaqipxnWanKdy3ovreSRpefCfmcpvHfhsXhbTdwxuHda8f9xzkkwb5KwKCHtJ4QbHDOUidtspzPgK6kM4W80sMmVkbV9fX8NVztNB3I3iBBeIv8201fNwQplW20287qnCn39pIWUJrv/SrDiAR7IMAO61++zIkNFbVe90Pv3eCWJD7zSSfPitOtS1CzjAIXn9V4IoOBjOyUpSDN/3hbAvT0kQd8/lnSl1W643c6eTCK2YKkFe6TwTSyj5cJ8WQSTtu76CWGCE2GXwY5IhKqQV5B+eUFvsT5I0D1OHM6KcGlqgagbJ25IjDThKocIxGr+FUP+P/SuIu9jyBukAoFIq9zuLcICtBXA5xLd9JJEXD2jRjnxSF8qCfAXAazvZWcUico0E9dJ2krRFqRsv4m0PLdCf5C9wtDGHC0J3W8heEHfmHoj75JuaQuxxkAdcRXXsCSJ4PiNv9nKSefCQFtFM+QyO2FUAazhBqY2diQY46nafJE2VVNXnCwG3aKJPIxs61JQjAacuF0gzk6B4mfUEQXF2riypIIW8YGojARLslUXoRaONr6aXkiVoEfcmAGofy6hToz+3QcHpOdkEjveW8VdVZdk1WcB+WiCWNi+HmvFnw08vaEto/wNHK9Rn5sL4w8ePX7KRpP1kTw+g7JQ0yt+c/CM+ftUf3KjgkXMpKPY/5m8t7czjWpzpDw2g+ptEhT5klqSB8ytZvrcaZ3YMThfkVNfiO96Hw+045yKtO6sCc9hQ5HSVirY9nZuPukLaXqaR6Zt7dZ2USkVLmAjnMgC3YWnM6m1M1GKWTgObOpxSOEzehpZxMrZRIzEKzWwy3vLQwJP7HPuZNl6oCgALWU3gvJs5K9rXCm7P7AjIR1N+oxgA6FbzdHDtej/d44tKoni7EwD9jznkSy0cFZgdUNRnka81+V4wXA1sUUCMgJs1wJvVjq0l4/SQL2FlWXgSH1UCgC0cBPmPVsv+SSte8EpJADDctFUHYJjPzB9dZJvpD3noO9p8P458bcqQpJ8W4SSzYoupyu8A6E8J2FeD5FiHdC94WAdhLMvDKeqEnblfAEBA/j96ALq5fBkCwH0f7wYAQAfugHwz+XxqALCNAQJE2tihwJ7I8rSpKPtei2D7+YEeUJ/7fwBKvRFkV3fszC8ONaYpAOK5LDn8Ke1vuBbypZxRqnJY1AVyUziAYkPz+G/0N8HFPW9bKsrKWE3vaN36+Q4Gi7CVv39CgbJ7Bg2cK8JhY0sAaGKV8baHQ4dmO6L7m+uhuIZ/M39l5Wi2l1XMo9huJR9s/C2HtFBuz+E+CQBu5bgNSmP2c9ZQqExLxU9HyiLJJRpo+UGAaQJuceiAQ9+TrZTOkAnlgGWsCaDJU/LV4Qu0TCnp3N1GknuCDV+d49tdqRYyzg/ASTrBaZiRjFRACo99Ojgs48iPSHdUwH4OzXLgiyzSV8E9m2v1AOJYDpGnyfQIYAMnAGXu8nLs7nzLEMDjrq08Su4g38/yQzzdAHz9geOV1pFjPp3OAsboPxqUeCEw1XZgvwN+D5hvlRS686oeALawdSJJ9gZKmV41iJr4mnMkoM4rrmv7zQ9cCuguk3w/ezeLAcAgnlOaQ5u17SdjSBbwbOWPBg0sMt73KgCvS4zdb/cQ6W+yM+R7aePhcOtzCbqDlJtGQF7pFuWmMGAgZwx6RvIzmeE5wxRWs/O7vNafCkJMAppXl/pYMFHArdp5nONmaRm/Ek2gzV+QypwO8OAufHmR1j0x0YMCITa0Gz9pzWtmjHarw9nw2EOGyrCBN91Ef3/QhaTntSqIpwWC9lYBaYzx+0ikfQL2V3VAjdspbtMhijGCZma+hbysne2AAN49YKe9Axz3uUq+28YYQH+ZMYJx5G69rLT9DPD1e1PzTwUds0Vk9vLgjwJ+TwSm2moOqjAc5W494JPzUAegsTHbaBJs4d8AapC8yePQsi0fZJKxAFowvaRsOt9zux7ASA4F0NiUHfqpoM4dBdIaH/oxICxfxvteKg6rWMw9TgCwhc2ARrm5jbezEoCe5FoAzWkdXJNzNPmCO0pd4RkAnuRJZwBHWeMqt+iA67k+ANDR+jboU4HrHJMCyXNtdQWHsQJu1aI9r7tCXpd/IeS9uQXacyTQOp/cCOhOcgW+5RRNgrgHpT7YGwi4xxnF82+g2GUuRCh3QDieBz4ZIHCDRYm8N8CghVGdtEfAAUoJM0VOj211IL5tCb5t7wN45F5DvdwP7UzXgSVkB0zjcE28rE+ccZbP/RHBVb/zT93PjAZ87rHTYjYR6c6w5acDVN5lVSLvdZYKCL6PBKbaCkcVOnEnFMfxCecBwK/s/dbcGLsYNpp2/vT5e3OwJtjJuXhKnnZdz9qGvZx3Na8EgFqmly8eSSJ8bf/jUwKClxmVyKuNCgjf5Mt430t0LEa0nQ2VSln5ylXWiHb+ADTjXVtGe3vSfU6Atv7PuJLHZzL1w03A6wW5C/Il5AIon812+6QAn/HPlWhf61Uw+EnAbQozRXdyDEpIZSzk0n3e1gP6l7S3QCI5G1pXzyY7SUfISQCGk20EZW1somIMv/7EAKeoywrk/S8KRvpTwAGiGFF2MlRuZXsBNvFnANjAQ8BMpkiaYQrz3dGErA+gWJ7dS4Cb9FHRgu0+OQBNTijwXQ1V2Q7BO02QU112VMFyUs0SNhDFso0shuOAXlwD7QPsr4EyZHEAOJMF8fEcqPyawzR68nEBjZJFfBVYIKidK+MtdwAJM0TvL6pZw9aiNfxeFsf5wGRuK4AmtHohnKwFQHppcRJdNutUNOFQjZ7Kcj4i6EdkC3hATY4GGC7gRgBHFO4/UnOMk0RXuA2A4QVfeyOV5gjN3FLJ3thBxgAIJ78WOBsZpGIAu2j0RPbhYwKq3hawgQqTFtgtYG/gsMKv9s+UnIxMkmQlrLTUANoxm3trMo1ZNTXS/8lLeccb2F9lP9MDB8lfBP3JASo2s3pBZGpWylcT+CcJNqqwaOJ5V2AKUTGUw5Xakmwr+5Fn+M9nOMSw35nJflG2h+7ajOIR12PMzw1bxaYYw3/+e2YA4PmAPKnkkfVM0uix7K1GX2zIq6cNSrySpSpJtrZaoHaujP94H1Tw+/DcS2Efx+f9GwggJct9LVPK5D2Ay3lyAOLYTRPDu/f+OEJzazTmyt72l+XnsD0gxXPrSXtFhSmcjoJ4o0mV32xka43QV/ZWyYd9NMEgAQ8cmiXCHC4TlbYkoz9T/VGNcdDv5iv+CpTN5la05SRNPmcCKpr4I2CwZVneVkdlHgAW86ZHV84TfZP71EurR7KXGrhsspDkNK2c00mmKQXzZ22wXUBTrILbLXsPwXj2AhYx2W8C2wO6TWQcgBm0Dq7JGZpU4V8B13kNgIuZmSEAbuW7x/BxWbikv3GWBby0t4LWD2XpGuAI5ee1wkGSx5VCuVojj7sCLlBAtYz8CNltozug28jUM/ZiAJyTeA1AbZK3uFWT+nz9L7kSQHOyNQCs5B98UQHAanYE4H+NU6D5I5lFi2oWGetotZnkGKX2PKsRapsES5VQLzu3BfA1twOAbiP5DvIWZBRQnkk7LXxZTIv15LN5nAs4J/EA5FPI15UBIJxbAd8Urob26TK6a4BZgsOSRsdIU6DSNJp9NcJwwQoVaJid1wLR7CSD7iCNkkyfQdNAqRwv4/MEpkRVKeWiplhw/bV8P9i5OifBdw/ZWTCT5nqQS09fw+MKN+q001sEQVroj8k4QpsSJnIelI+QvbTC77K1alDfmB2+jeUEKJ7B6jJcpJXJU/gc0O8gSfPxKgLDpDckmVcb6MwpU96SrCg4w2iIdzPwEON00L4aha21gH+yzNpdCymevOKm5J5D3nXWyvsByY2q8F1u+g06izCR6wV7WX27lbQHA76veTwxgxmhANz305R4/AnnAthN8s3YMywmq2t/6qKwiEncrEMBRouWagLvcyRpnWlwyHsvea0UlAeQ5FStUN1IblGHDjbSVaGkxd5UtpGuqLwxn/ucgAlcAsNQs/HH4LBknisL38emUkAXOx8MdUM8PQB4pnI+FJeRpw0owGKvRVklNYHTDDNJXmupTtf7ObnbA8qGWzL7OEkjdLJzhwNYTFZVQBKzOwGYz9IAKt7irfGtmln5a2StnZRn1a/V9hpPRPT93c4YA4C9dAECLpLtlBL4qiQK0O0gFc8FaQLU2GUlyTvRdfQC/dfTHpM3mkPtZIqT+oU4a4K53O2I2yOOUtpE8kRjTGQoAJTLpkrbzfX731DtNsgvZ6PEDCNNDFHwMnEQCrDq/Hjl39ZU0QYImnDFTpLGG8ePH7xpJF/HNYDqPvHKu07u1Ea/aLAjGMkHeoUFbJNAXj/C6TJMZ+KcuTM3ZZCTywLQtbpP3tm2IDra+KGEzCvv3RoTM/rv4hcKY5jmVBAfrU9E9IYT91KTziZsnd2juoRP38fMnxQW0huhO/LJx24y7w/3DAACr3GBDgDqZpkHAkAnLoZ8FMl/xvkhjhVFpd9xMgqjZ2hqKFpFbwClVlu4TQcAizgSALzP8Ua3MpWWWLObA4D3I1OgLDSXF5pJADYwWOB+jvymULKCzOknyZazHOR1HvNQVQB+6bmRAOD1mHJrJAC4HeUiAJ9PzrWPkyCPYzlZ+UQyR1coGcqED0z8DsB81hEgOJ18lXzt4nPafh8xZPUD0nThbyuzfx06dskTMi3p+nOSMyA+Sk/AJ9bEnZYHKJS24qiqZ8nLfVyGsJsIA5n/nipz49u6ACWHn7VROTObdw0i6elrVF5p5PPuXjxbOGnEYUDjfTa+2MItCobHJn9A51tr0r9Mb+UJxYAE8kjXsk4A1rEDxA2YEm/jgxHuCOSxwkkoBwBAxaXvyZyyIoziGAj9j/CCn1I/a2ZHCEuYHkoi6TDJ0211AMoyQQO9r6TC1dfXW+TipUIn06nQKTj5+norFf9chbsanyCdmpJllVz1gIcDIRwkA7wmfOAxg8j7w0tXAQy/8UaAaLz9bQjEsZwM8WjybBiEgTyswRcJy9ZMkURj18ROEA3buGSLkyiqDICfVGw1iKrGpkwUuayc/dO2EIVVStKchSO2NFXw3zo7+rcWolpTETregdr8SQSUT+GfHgLM5GQRDJuZNbYcXCPO8EU1iEsa3/qJ+pnzfpAgDuBBLYYAnQYqBEFxWA2MqSma8QtQP1Gp3v6eIkirIZ76FWDY5uxQ//aAtKa4aH15QFdVhF+q7XB2oDonKsEriQ/7FZN5vrK2EAE/W8mH+eTRkhC7HOMwyOv8xvwWUA7gnxphrcKv62YpLJ4VZxDNm1EaKxfrFOLct0kObQCAgSEObQCAiA4CKQ6qPZOawMFSjFWBEm9Iy73Lx4/F/0PTKGfZZ9E3SD7PJc17WkqyOhfJv+Ljj5x9RXIIVFbgBo10axSCoDjs+3lQXFB8Vnif0WVFtS7FJrTSZlQlh1Y7AegQKcBmoEbs5dIiLIOjBvteNejI7KtvjBS/3Rm74LiJ5j87lABCYp6QaevmrEyiYuaduzwvqWnE2RqNaq9BjUEdFRYhZouhXRPRGh8YNjvUdShQZoPkUN1ZEry3uIgm/h/guxWa4fEbvRop1VoeAHx8a/XcbyVpS4ouBbEucnsmST6dERns56sHsI+hUBvNDhqU3752Q3eIe21ZN0vUuQJifAVeg1AiCpXbCfzHAOhdQTRBAb1WLZnnA/GudYtEaL528dIAiKWxa5YsK6M01rHtbKgGXblAJvwymQ9KQL1rInN+MkAxyJoI1RfspTUoHLbiIVX6h5leSnDdzqt+6qbw1ZdQuZA9VDXgARRSpVS2UoNRHKcC0gpeK6lCWshnFaHS98N/LmrcUli/sIJvLOkV1XgbX7upAObyfgUFrx18Ggy10/gLVErbuQOF10H2N9+qwC+crApj7Nlza+oAXY+HvBEItYFZGb4qXLYz2asQgyEWU6y3ktez/Iaq0DaLzH321Eiu84Ratwv8Gcr1U3ipOLRtOtQVQKQgzJFKwypqFqYmAoBXNSWnRkqew7o3BxBUAUCYCuc6WqFJGjO3df2qZOng4FK+DazG9mrqbsomabSSTBnpo6LkWf4d6Ovr6x9cISL6b9rXuUHjyDoA0KWLF4BIAK27RqloDwCto4a4AWjWvSUAfbeuQQAiAbgMiWoHIAqAZziA9mEAKo1VGugCJwBVawCIBBDRrScARAKo07GjBnCd+oLqf/9GEDDhLnlnTuOS0Af2iDcxd3MDvcxvfAZV2/bXg+ZSt0AAC+oBQBcAPdFZSarVDEBPfP4dgGlRvQFUrQl5FwChldBbwbs5gPD6AJzbK/U1QFLqAiDKuZOsC4Au0FjXcOyG+Pj4+LiNfyWaSN5fP3XRKSuNG0Kh7D/6Pvl217zFp/JJ/nf2aLx8/bTO/ijANiP8AUQ2CwAQCSACEUqhfUNlnfo7A2jQrhkAfd+OZQFEAnDq36ktgAgAnuEAWkQCcGqk5DMwqiWAoAoAIgFEoKksEsCXndpoo96lybZ8kvx3/yAvqJcaLUzOIcnUEYH4X1kf/18H7ae9F7R1O8dXnSUUAaURprwWmnie4mFfFBHrZZkiNfC+yDV6FBm/Tje1d8jvKldKKEJ+k2Xt70CJVC6XUKSsm2mf7aQm/DnnSyhi1njG5BYKxWPN1vEoepbcQ95d0LtFj3nH8/m4Poqk3+3IovDBcA8UVXVVW0ZFtfkChWsAVlA4ICwKAADwKwCdASrhAGIAPm0wk0akP6ahKJpMc/ANiWwnAb4HnEcM8QAym+QECg/t34wfrN/Zmk3XAC9ERdFv1n45+y9Xf8F+SPYz1A9Of6rz/uYv+b/Zva5/tfUL92HuAfp7+uf+G9o71I/uT6gv2e/aD3X/8n+ynuw/tv+p9gD+nf6n/2+01/2/YU/wX/a9hf9qvVx/5f7ifA1/U/9z+4HwG/s7/9vYA/6nqAcC1+AHD7GBpk5ZmkCZT3gBr2su5u3kwU1rv4FSxvMSCrcVTaHUEipfhBSdcwDfvg8tEXAG3udHJCEE0cBaJLAbkDPMcfDjhsT3UpuvDg0QykxlUV/dJ5ECVHQZKbyvbP/W5pDQ5cje/9naXPGR49MCrDwwVlfdrarVz/gUGEdJyWzQq7y3IBU1nImcuJykCAAsAeqkllOeLOFuF4GPi496b4VNkPEeq9JrYnd0F/NJ53okV+lkugz3n1PTaHUEidAA/tZGGwLbHSPE0JWb2qk6tT/NXtJ0W1xPnz4dZmfXrojh9Ir5Snj9eXqsa9q5K9Z2XQJPUw+FKYru2t18K7IOX9UzljdGeSMh97UrmSyuGmor4aoDppD7hcJS5q42ENdfnQrTDx9OIaMNDbWw1Tz2hyKfNVbXwNx+sueVR2kdalpeBLYeRPr2CWoaCnKaGa4w8xWeD8dTqlIfd33ujwtWraWM5laSnZ8XZ0fWnt6D/S/CtS8fbCjXd4UV32kLthaERVrDAYluhH73dP0uNf5M+uH0yPh1VuEAC6FMOC9j/6rd9Z4FlZjfcWjpW5YxpadkH1GCnj4kFtdni7d+yT/q7weystRLqkzWxTq6mrMQ3aOm8HDiwUBz0uiNVyBanUCPwnIrA/aBbIrNl7yHnWh7JFNyRlLUtQkHVt2qJ/gO/B33yDDRnE75+1Bg6F2t7RG8fXzvV2DS+x74Axe/FExZmPbE48LeJmknRz36bXLSPRcEOdMbtL80AucVTdSQ4axkZCAqQanQ3yUe1GsaXg9fmR8ToF8hyEfSGf2LIt/wq/jY9EL5o4izmvxeXs3djqOywYFihJbuc9qmh1Ld0eXL927HovjjQkA9icY7Jkwi6kXpNXuwkoGyFt9pWXtWxgWPcrHr+34vh7VExHprYcNzu1rB6hMVDHt/XmKndQr2IQhS4CH+Zg9DMcwBjdETjRYiJEFn7fJ7kOSgsQpOuEzQsAXDD2DaKNmX1empJP+E9u1Mxzgh4nHf2KId30oIW5RtP1MTcEJbBLvZ8oYXII+HR/QpiCuFsLCm3B0xFj+QXSbP4CW46DePSj7Giym6WlJqKIenPzfdB/l/kyx0YW60ZashY0cNoW88q6/+teavy4Qc+/5PUOgrz9iUmZNEVog1CiEe6Ejj9cIeuM996w1XxtXpTLkHVCVaNnd0sjYiV5D3UaCONqkud9vIP5W5gkl7OmatC180zHDr+vYA2uxj4vIgdW/4n8LUQdjucgqVxSCc1CuaAeCH186g26/0dEr3aDeNdRgHDyu41HHVVYY2shth6K7o0xxt0C/Hh95toO5zoG/zBMtop9BZUm416axT2eOupq3tVpt9SF4z1qmfjZrOasrpQbS19vNveGwj63uXX6ynOM+mAEf4jKb/TjbgHXorGkQ3q0z8l9i7/okD9j/hC896tR1giy+JUimnmtLl+72QY12w1hRjkfMXeSdV1tGb0MgaQP/kriPYmvDiWDI1iPsoWuGgO8PY3kZ97k00UdtML+xFeFIe1Qr5pBPc/oRZEXPj25Hs+PqmnWfRbUy8Y5Smeqf3jaPeCMNO/GTHXiJ5FercbiahFkKyov6TUZy4EJL/YkrC+gEo6rXKwgzgDRUENTlMtziWh+S50Qe7u2md2wa915/RTB3Eh7CBNiAoGLN9Sq6gOkIQ1NzGlARgcTi+ggl+dXZwFOIuHWGocv0ajaLWoGk2yi9O35qo/OfaCCe+vvUiGm5g8tn29mhbwZ1Bp6KmDZeGCZ5fZQU/112ROX8Ou6ctIbvV0vAsdywK9cr/fl6NaxJxGIbMmIuOhYdrokO5wg8g5z1A7Xwgg5C8cLEtghzFDy0nWPsFsS3qwydKFRZGuHMZOVmh4ZoDftNKhU7rlmK8PFZ+n06PPrVKHT6A3Bd+aW6gPPP35jkmK3MYapQ+luHWiWGpx1kVX7+cq5+fgxYdency+mOp3AJ2x4Nv/nUlu0vhVEb1e+TM6mFTe+5b+vxVkgs11DbOkdYZBfCnD3y4FyncAslbhBFpBwvleyywwhWQIyXAYDcba6nSXI99ATZ77UXqIQM+ICewu80RJ19kgNRqowqyb6h8piPRThveHm+F24ap2E5+0AJSzUS5dIjrZLctEi2Ka+C/9LB1ZTxxhRf802dNOdDwVqTKDoN7xH/8MA2Iwe2qbxFco4LMkhVeDgk8NQjOofHOEx8Pgcjtn/br/Hd+lNbTrsLQhYUuCBdSm+jgEaKWj/moFLUqcxdVH2LKHyAeCzFtjoymPaFc4keAJ4bEGkdSgkbr4XzUSpkPPNCMtRVp4tuCbtXwGzqJhhpKuDlsIHFgARkgVMHWDdXp0P8IYbEZeEiLZRGOYC6meMuWPbymXv1iZjhigsgeh/gsnnvVUSLZbdqEqqVyvTB3zO0vNSCKtfskib2mDcx1fNzj+cGwAOme/1HHaBF5rnFH/Qn57OO3ks/pq7jbO8IG63GRUSPr/n9Dgp293cpemVpWy+iHgJ215kFtJAAYTs30GqTrLy3pxtFI5nKkMUvbCJuVdOSLx+4kpqCq4JcNtzeW6q3SbHH1t5CLny/Wt3AoUOilRQ0vfwtqy9w+81me4q+6YUj3or5pRhzlGLo+bURaUcYR2ti5Cd2VOv2W9o5XJchIwGYDrg35h+wNbARkstbC1RO92dgPHw9LKE5RxMpm7UQND2As+EsuJvhSqJ+kAQpejPvjvKN+JtR8I+sXBxOrknDtEvYwv4nXMg2435iDFn81HYjtsjpkqAlRt6ZtiMhJV0Rh8KhH5s3C4AAUFh0vFAEUbQNlDs8bppZIIl38Fmnf8TDuRy5gAAKLF7cg3khHKRm5CVLd9QIjR1zlHru/WuKXPeeDvTmf6rsdszp1wq1Ye5puR/AGueR37fQUdpAlkbpWt4+PCtU8Jl+o509sDWH+0h3fy2jfXDMLYyo0OWN2Wm6hacCYdF3h8ZyC7ZdKfUXVzv3P44mOMKKovaW36gGIDPAqiv2s0n1JGUEBOaiakiEAbVmP+S/YFIezWMpbNnJlmF14jPHDUHZFtp/gdWSs7ERaOfopNLZph37iecZ5cjBzWbRTnXfEd/Hwi+7JNvnd/1gxXZ4DOTnJgSKqA41cTHvjsxR42IHbAZw5cCd5UXTkk8IgfZqI4LlfgBNRAXF3t+Pb62k3282UBwsJnkbKAAAAGGWbAw5e4ByxCXQLfw8MlvqTjmj7/T/+UgBQsvcqcyva7JqXNoAAAAAAAAA=" alt="TSN Dermatology Skin Specialist Clinic" width="225" height="98">
+    </a>
+    <nav class="nav" id="navigation" aria-label="Main navigation">
+      <a href="#care">Our care</a>
+      <a href="#doctors">Our dermatologists</a>
+      <a href="#visit">Find us</a>
+      <a class="button" href="#appointment">Request a consultation <span class="arrow" aria-hidden="true"></span></a>
+    </nav>
+    <button class="menu" type="button" aria-controls="navigation" aria-expanded="false">Menu</button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy enter">
+        <p class="eyebrow">Gleneagles Medical Centre · Singapore</p>
+        <h1 id="hero-title">Your skin.<br><span>Our specialist<br>attention.</span></h1>
+        <p>Medical, surgical and cosmetic dermatology with Dr Koh Hong Yi and Dr Tham Siew Nee. A clear starting point for your skin, hair and nail concerns.</p>
+        <div class="actions">
+          <a class="button" href="#appointment">Request a consultation <span class="arrow" aria-hidden="true"></span></a>
+          <a class="button outline" href="#care">Explore our care <span class="arrow" aria-hidden="true"></span></a>
+        </div>
+        <p class="small muted">6 Napier Road, #07-08<br>Call or WhatsApp the clinic to arrange your visit.</p>
+      </div>
+      <div class="care-index dark enter">
+        <p class="index-label">Three areas of specialist care</p>
+        <a class="index-item" href="https://skinhealthsg.com.sg/medical-dermatology/">
+          <span>01</span>
+          <div><strong>Medical</strong><p>Assessment and management of skin, hair and nail conditions.</p></div>
+          <span class="arrow" aria-hidden="true"></span>
+        </a>
+        <a class="index-item" href="https://skinhealthsg.com.sg/surgical-dermatology/">
+          <span>02</span>
+          <div><strong>Surgical</strong><p>Skin cancer, Mohs surgery, cysts and other skin lesions.</p></div>
+          <span class="arrow" aria-hidden="true"></span>
+        </a>
+        <a class="index-item" href="https://skinhealthsg.com.sg/cosmetic-dermatology/">
+          <span>03</span>
+          <div><strong>Cosmetic</strong><p>Pigmentation, scars and other cosmetic skin concerns.</p></div>
+          <span class="arrow" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+    <div class="wrap heritage">
+      <strong>Care since 1996.</strong>
+      <p>Founded as Tham Siew Nee Skin Clinic. Today, TSN Dermatology continues its focus on specialist dermatologic care.</p>
+    </div>
+  </section>
+
+  <section class="section" id="care" aria-labelledby="care-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Start with your concern</p><h2 id="care-title">Find a path<br>to the care you need.</h2></div>
+        <p>Explore treatment information, then speak with the clinic about an assessment appropriate for you.</p>
+      </div>
+      <div class="care-grid">
+        <article class="care-card">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 31c7-8 13 7 20-1s10-6 13-3M8 40c7-8 13 7 20-1s10-6 13-3M24 5c-4 6-10 11-10 17a10 10 0 0 0 20 0c0-6-6-11-10-17Z"/></svg>
+          <h3>Eczema care</h3>
+          <p>Explore eczema care and treatment options for inflammatory skin conditions.</p>
+          <a class="text-link" href="https://skinhealthsg.com.sg/medical-dermatology/eczema-treatment/">Eczema care <span class="arrow" aria-hidden="true"></span></a>
+        </article>
+        <article class="care-card">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M30 5c-11 0-19 8-19 19v5l-4 5h8v8h15M30 5v13a6 6 0 0 0 6 6h5M22 21h1m-5 6h1m5 4h1m-5 5h1M34 31h8m-4-4v8"/></svg>
+          <h3>Acne care</h3>
+          <p>Understand acne assessment, treatment and care for active breakouts.</p>
+          <a class="text-link" href="https://skinhealthsg.com.sg/medical-dermatology/acne-treatment/">Explore acne care <span class="arrow" aria-hidden="true"></span></a>
+        </article>
+        <article class="care-card">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="20" cy="20" r="12"/><circle cx="20" cy="20" r="3"/><path d="m29 29 12 12M7 41h12M36 5v8m-4-4h8"/></svg>
+          <h3>Skin cancer &amp; Mohs</h3>
+          <p>Learn about Mohs micrographic surgery for selected skin cancers.</p>
+          <a class="text-link" href="https://skinhealthsg.com.sg/surgical-dermatology/mohs-micrographic-surgery/">Understand Mohs <span class="arrow" aria-hidden="true"></span></a>
+        </article>
+        <article class="care-card">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 34h36M8 42h32M8 25h8a8 8 0 0 1 16 0h8M24 4v9M10 10l6 6m22-6-6 6"/><path d="M20 25a4 4 0 0 1 8 0"/></svg>
+          <h3>Cysts &amp; skin growths</h3>
+          <p>Read about cyst assessment and surgical removal at the clinic.</p>
+          <a class="text-link" href="https://skinhealthsg.com.sg/surgical-dermatology/cyst-removal-surgery/">Explore cyst care <span class="arrow" aria-hidden="true"></span></a>
+        </article>
+        <article class="care-card">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 5h24v38H12ZM18 11v25m6-25v25m6-25v25M6 16H2m4 8H1m5 8H2m40-16h4m-4 8h5m-5 8h4"/></svg>
+          <h3>Light therapy</h3>
+          <p>Information about light-based treatment for selected skin conditions.</p>
+          <a class="text-link" href="https://skinhealthsg.com.sg/medical-dermatology/phototherapy/">Explore phototherapy <span class="arrow" aria-hidden="true"></span></a>
+        </article>
+        <article class="care-card">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M18 6h12v8l6 8v20H12V22l6-8ZM18 14h12M12 26h24M20 33h8M7 6v8m-4-4h8M40 15v8m-4-4h8"/></svg>
+          <h3>Cosmetic skin care</h3>
+          <p>Explore options for pigmentation, scars, wrinkles and other concerns.</p>
+          <a class="text-link" href="https://skinhealthsg.com.sg/cosmetic-dermatology/">Explore cosmetic care <span class="arrow" aria-hidden="true"></span></a>
+        </article>
+      </div>
+      <p class="care-more">Looking for another skin, hair or nail concern? <a href="https://skinhealthsg.com.sg/medical-dermatology/">View medical dermatology</a> or <a href="#appointment">contact the clinic.</a></p>
+    </div>
+  </section>
+
+  <section class="section doctors" id="doctors" aria-labelledby="doctors-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Meet our dermatologists</p><h2 id="doctors-title">Two specialists.<br>Individual attention.</h2></div>
+        <p>Learn about each doctor’s clinical background and areas of interest.</p>
+      </div>
+      <div class="doctor-grid">
+        <article class="doctor-card">
+          <img src="data:image/webp;base64,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" alt="Dr Koh Hong Yi" width="650" height="450" loading="lazy">
+          <div class="doctor-copy">
+            <p class="eyebrow">Senior Consultant Dermatologist</p>
+            <h3>Dr Koh Hong Yi</h3>
+            <p class="qualifications">MBBS · MRCP (UK) · MMed (Internal Medicine) · FAMS (Dermatology)</p>
+            <p>Clinical interests include skin cancer, Mohs micrographic surgery, dermatologic surgery and inflammatory skin conditions. His background includes specialist practice at Singapore General Hospital.</p>
+            <a class="text-link" href="https://skinhealthsg.com.sg/about-us/dr-koh-hong-yi/">Read Dr Koh’s profile <span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </article>
+
+        <article class="doctor-card">
+          <img src="data:image/webp;base64,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" alt="Dr Tham Siew Nee" width="650" height="450" loading="lazy">
+          <div class="doctor-copy">
+            <p class="eyebrow">Founder · Senior Consultant Dermatologist</p>
+            <h3>Dr Tham Siew Nee</h3>
+            <p class="qualifications">MBBS (Adelaide) · MMed (Internal Medicine) · FAMS (Dermatology)</p>
+            <p>Founded the clinic in 1996. Her interests include eczema, psoriasis, pigment disorders and phototherapy. She previously served as Deputy Medical Director of the National Skin Centre.</p>
+            <a class="text-link" href="https://skinhealthsg.com.sg/about-us/dr-tham-siew-nee/">Read Dr Tham’s profile <span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </article>
+      </div>
+      <p class="doctor-note">Dr Koh joined the practice in 2020. The clinic adopted the TSN Dermatology name in 2022, continuing the practice established by Dr Tham.</p>
+    </div>
+  </section>
+
+  <section class="section approach dark" aria-labelledby="approach-title">
+    <div class="wrap approach-grid">
+      <div class="approach-copy">
+        <p class="eyebrow">Your first consultation</p>
+        <h2 id="approach-title">Care begins<br>with understanding.</h2>
+        <p>The clinic’s approach starts with your concerns, medical history and a clinical examination, followed by discussion of suitable next steps.</p>
+        <a class="text-link" href="https://skinhealthsg.com.sg/about-us/">About the clinic <span class="arrow" aria-hidden="true"></span></a>
+      </div>
+      <div>
+        <div class="step">
+          <span>01</span>
+          <div><h3>Share your concerns</h3><p>Discuss your symptoms, their history and how they affect your daily life.</p></div>
+        </div>
+        <div class="step">
+          <span>02</span>
+          <div><h3>Assess your skin</h3><p>Your dermatologist examines the concern and considers whether further assessment is needed.</p></div>
+        </div>
+        <div class="step">
+          <span>03</span>
+          <div><h3>Discuss your options</h3><p>Understand the assessment and appropriate treatment options, taking your preferences and health into account.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Visit TSN Dermatology</p><h2 id="visit-title">Find us at<br>Gleneagles.</h2></div>
+        <p>Contact the clinic to confirm your consultation time before visiting.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="address-panel">
+          <h3>Gleneagles Medical Centre</h3>
+          <address>6 Napier Road, #07-08<br>Singapore 258499</address>
+          <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=TSN+Dermatology+6+Napier+Road+07-08+258499" target="_blank" rel="noopener">Open clinic map <span class="arrow" aria-hidden="true"></span></a>
+          <div class="actions">
+            <a class="button" href="tel:+6564766821">Call +65 6476 6821 <span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </div>
+        <div class="hours-panel">
+          <h3>Clinic hours</h3>
+          <div class="hour-row"><strong>Mon–Fri</strong><div>8.30am–1pm<br>2pm–5pm</div></div>
+          <div class="hour-row"><strong>Saturday</strong><div>8.30am–1pm</div></div>
+          <div class="hour-row"><strong>Sun &amp; PH</strong><div>Closed</div></div>
+          <p class="small">Weekday break: 1pm–2pm.<br>Appointment availability is confirmed by the clinic.</p>
+        </div>
+      </div>
+      <div class="contact-line">
+        <a href="https://wa.me/6588311384">WhatsApp: +65 8831 1384</a>
+        <a href="mailto:skinhealthspore@gmail.com">skinhealthspore@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section appointment" id="appointment" aria-labelledby="appointment-title">
+    <div class="wrap appointment-grid">
+      <div class="appointment-copy">
+        <p class="eyebrow">Arrange your visit</p>
+        <h2 id="appointment-title">A clear next step<br>for your skin.</h2>
+        <p>Call or WhatsApp the clinic to request a consultation. You can also use the clinic’s existing online enquiry form.</p>
+      </div>
+      <div class="appointment-actions">
+        <a class="button" href="https://wa.me/6588311384">Request a visit on WhatsApp <span class="arrow" aria-hidden="true"></span></a>
+        <a class="button outline" href="tel:+6564766821">Call +65 6476 6821 <span class="arrow" aria-hidden="true"></span></a>
+        <a class="text-link" href="https://skinhealthsg.com.sg/contact-us/">Use the online enquiry form <span class="arrow" aria-hidden="true"></span></a>
+        <p class="small">An enquiry does not confirm an appointment. The clinic team will confirm the date and time with you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
+      <div class="faq-copy">
+        <p class="eyebrow">Before your visit</p>
+        <h2 id="faq-title">Helpful answers.<br>A little clarity.</h2>
+        <p>For individual appointment or payment questions, contact the clinic team.</p>
+      </div>
+      <div class="faqs">
+        <details name="tsn-faq">
+          <summary>Do I need a referral?</summary>
+          <p>The clinic states that no referral is required. Call <a href="tel:+6564766821">6476 6821</a>, <a href="https://wa.me/6588311384">WhatsApp the team</a> or use the <a href="https://skinhealthsg.com.sg/contact-us/">online enquiry form</a> to request a consultation.</p>
+        </details>
+        <details name="tsn-faq">
+          <summary>Who are the clinic’s dermatologists?</summary>
+          <p>Dr Koh Hong Yi and Dr Tham Siew Nee are Senior Consultant Dermatologists at TSN Dermatology. <a href="#doctors">Read their introductions</a> and follow the links to their full profiles.</p>
+        </details>
+        <details name="tsn-faq">
+          <summary>Is the clinic open during weekday lunchtime?</summary>
+          <p>The published weekday hours are 8.30am–1pm and 2pm–5pm, with a break from 1pm–2pm. Saturday hours are 8.30am–1pm. The clinic is closed on Sundays and public holidays.</p>
+        </details>
+        <details name="tsn-faq">
+          <summary>Can I ask about insurance?</summary>
+          <p>Some medically indicated procedures may be claimable. Ask the clinic and your insurer to confirm eligibility and policy requirements before treatment.</p>
+        </details>
+        <details name="tsn-faq">
+          <summary>Does sending an enquiry confirm a booking?</summary>
+          <p>No. The clinic team needs to confirm your appointment date and time. Contact the team if you have not received confirmation.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer dark">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <p class="footer-title">TSN Dermatology</p>
+        <p class="small">Skin Specialist Clinic<br>6 Napier Road, #07-08, Singapore 258499</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="https://skinhealthsg.com.sg/about-us/">About us</a>
+        <a href="https://skinhealthsg.com.sg/contact-us/">Contact</a>
+        <a href="https://www.facebook.com/TSNDermatology">Facebook</a>
+        <a href="https://www.instagram.com/tsnskinclinic/">Instagram</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> TSN Dermatology Skin Specialist Clinic</span>
+      <span>Medical · Surgical · Cosmetic</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="mobile-actions" aria-label="Quick clinic contact">
+  <a class="button outline" href="tel:+6564766821">Call clinic <span class="arrow" aria-hidden="true"></span></a>
+  <a class="button" href="https://wa.me/6588311384">WhatsApp <span class="arrow" aria-hidden="true"></span></a>
+</nav>
+
+<script>
+const menu = document.querySelector('.menu');
+const nav = document.querySelector('#navigation');
+
+function closeMenu() {
+  menu.setAttribute('aria-expanded', 'false');
+  menu.textContent = 'Menu';
+  nav.classList.remove('open');
+}
+
+menu.addEventListener('click', () => {
+  const open = menu.getAttribute('aria-expanded') !== 'true';
+  menu.setAttribute('aria-expanded', String(open));
+  menu.textContent = open ? 'Close' : 'Menu';
+  nav.classList.toggle('open', open);
+});
+
+nav.addEventListener('click', event => {
+  if (event.target.closest('a')) closeMenu();
+});
+
+document.addEventListener('click', event => {
+  if (!event.target.closest('.header')) closeMenu();
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
+    closeMenu();
+    menu.focus();
+  }
+});
+
+window.matchMedia('(min-width:851px)').addEventListener('change', event => {
+  if (event.matches) closeMenu();
+});
+
+document.querySelectorAll('.faqs details').forEach(item => {
+  item.addEventListener('toggle', () => {
+    if (item.open) {
+      document.querySelectorAll('.faqs details').forEach(other => {
+        if (other !== item) other.open = false;
+      });
+    }
+  });
+});
+
+document.querySelector('#year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
